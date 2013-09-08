@@ -1,13 +1,8 @@
 build:
-	pdflatex --output-directory out/ Assignment1.tex
-	bibtex out/Assignment1.aux
-	pdflatex --output-directory out/ Assignment1.tex
-	pdflatex --output-directory out/ Assignment1.tex
-out:
-	@mkdir -p out
-
-clean:
-	@rm -fR out
+	pdflatex Assignment1.tex
+	bibtex Assignment1.aux
+	pdflatex Assignment1.tex
+	pdflatex Assignment1.tex
 
 open: build
-	@open out/Assignment1.pdf
+	open Assignment1.pdf

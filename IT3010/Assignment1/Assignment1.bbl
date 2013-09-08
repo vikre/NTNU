@@ -5,10 +5,24 @@ Arild Faxvaag.
 \newblock Er sikkerheten ved elektroniske journalsystemer god nok?
 \newblock {\em TIDSSKRIFT-NORSKE LAEGEFORENING}, 127(20):2700, 2007.
 
+\bibitem{personopplysningsloven201104}
+LOV Personopplysningsloven.
+\newblock 04-14 nr. 31: Lov om behandling av personopplysninger.
+\newblock {\em URL: http://www. lovdata. no/all/hl-20000414-031. html
+  (Nedlastet 9}, 2011.
+
 \bibitem{Smith199939}
 E~Smith and J.H.P Eloff.
 \newblock Security in health-care information systems—current trends.
 \newblock {\em International Journal of Medical Informatics}, 54(1):39 -- 54,
   1999.
+
+\bibitem{van2003data}
+M~Van~der Haak, AC~Wolff, R~Brandner, P~Drings, Michael Wannenmacher, and
+  Th~Wetter.
+\newblock Data security and protection in cross-institutional electronic
+  patient records.
+\newblock {\em International journal of medical informatics}, 70(2):117--130,
+  2003.
 
 \end{thebibliography}

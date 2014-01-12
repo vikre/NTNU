@@ -50,7 +50,7 @@ import android.view.SurfaceView;
 				
 			}
 		});
-		bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.ic_launcher);
+		bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.image);
 		sprite = new Sprite(this, bitmap);
 	}
 

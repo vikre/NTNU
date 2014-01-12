@@ -1,0 +1,147 @@
+What is a qualitative interview?
+
+    Kvale defines the qualitative interview as "an attempt to understand the world from the subjects' 
+    point of view, to unfold the meaning of peoples' experiences, to uncover their lived world prior to scientific explanations."
+    In simpler terms, the qualitative interview is a conversation directed by an interviewer with the end goal of extracting knowledge.
+
+Name one or more types of qualitative interviews.
+
+    Structured interview.
+    In a structured interview there is a complete script that is pre-
+    pared beforehand. There is no room for improvisation. These types of interviews are
+    often used in surveys where the interviews are not necessarily conducted by the
+    researcher.
+    
+    Unstructured or semi-structured interview
+    . In an unstructured or semi-structured
+    interview there is an incomplete script. The researcher may have prepared some
+    questions beforehand, but there is a need for improvisation. The interviewer is the
+    researcher or is one of a team.
+
+    Group interview.
+    In a group interview two or more people are interviewed at once
+    by one or more interviewers. This type of interview can be structured or
+    unstructured.
+
+What are some difficulties of the qualitative interview?
+
+    Artificiality of the interview
+    The qualitative interview involves interrogating someone
+    who is a complete stranger; it involves asking subjects to give or to create opinions
+    under time pressure.
+    
+    Lack of trust 
+    As the interviewer is a complete stranger, there is likely to be a concern
+    on the part of the interviewee with regard to how much the interviewer can be trusted.
+    This means that the interviewee may choose not to divulge information that he or she
+    considers to be sensitive. If this is potentially important information for the research,
+    the data gathering remains incomplete.
+    
+    Lack of time
+    The lack of time for the interview may mean that the data gathering is
+    incomplete. However, it can also lead to the opposite problem ? of subjects creating
+    opinions under time pressure (when these opinions were never really held strongly to
+    start with). In this case more data are gathered but the data gathered are not entirely
+    reliable.
+    
+    Level of entry
+    The level at which the researcher enters the organization is crucial
+    For example, if a researcher enters at a lower
+    level, it may prove difficult if not impossible to interview senior managers at a later date.
+    In some organizations, talking to union members can bar access to management and
+    vice versa. Additionally, gatekeepers may inhibit the researcherfs ability to access a
+    broader range of subjects.
+
+    Elite bias
+    A researcher may interview only certain people of high status (key infor-
+    mants) and therefore fail to gain an understanding of the broader situation.
+    Miles and Huberman (1994)
+    talk about the bias introduced in qualitative research by interviewing
+    the stars in an organization. Elite bias concerns overweighting data from articulate,
+    well-informed, usually high-status informants and, conversely, under-representing data
+    from intractable, less articulate, lower-status ones.
+    
+    Hawthorne effects
+    Qualitative interviews are intrusive and can potentially change the
+    situation. The interviewer is not an invisible, neutral entity; rather, the interviewer is
+    part of the interactions they seek to study and influences those interactions.
+    The researcher may intrude upon the social setting and potentially interfere with peoples behaviour.
+    
+    Constructing knowledge
+    Naive interviewers may think that they are like sponges, sim-
+    ply soaking up data that is already there. They may not realise that, as well as gathering
+    data, they are also actively constructing knowledge. In
+    response to an interviewer, interviewees construct their stories they are reflecting
+    on issues that they may have never considered so explicitly before. Interviewees usually
+    want to appear knowledgeable and rational, hence the need to construct a story that is
+    logical and consistent.
+    
+    Ambiguity of language
+    The meaning of our words is often ambiguous, and it is not
+    always clear that subjects fully understand the questions.
+    Fontana and Frey (2000) say that asking questions and getting answers is a much harder task that it may seem
+    at first. The spoken or written word has always a residue of ambiguity, no matter how
+    carefully we word the questions or how carefully we report or code the answers.
+    
+    Interviews can go wrong
+    Interviews are fraught with fears, problems and pitfalls. It is
+    possible for an interviewer to offend or unintentionally insult an interviewee, in which
+    case the interview might be abandoned altogether.
+    
+List some recommendations for qualitative interviewing
+
+    Introduce yourself
+    Name your background, experience, gender, age, and nationality. As the
+    interviewer is not just a sponge, this information may be useful in the writing up, so that
+    readers can assess the validity of the findings.
+
+    Minimise social dissonance
+    As the interview is a social encounter, it is important to minimise social dissonance 
+    i.e. minimise anything that may lead to the interviewee to feel
+    uncomfortable. This is generally thought of as a way to improve the quality of disclo-
+    sure. This usually involves trying to manage first impressions, dressing appropriately,
+    and using the appropriate language/jargon. Playing a part may mean playing different
+    parts for different subjects (e.g. compare interviewing a CEO vs. a shop floor worker).
+    Playing a part also means dressing up or dressing down as appropriate. Gender, age
+    and culture may be important in some situations, depending upon the research topic.
+    For example, a man might find it difficult to do research on some womenfs organisa-
+    tions if the interviewees perceive that the social dissonance is too great (i.e. the access
+    to informants and disclosure might be minimal); in some cultures a male would not 
+    be permitted to interview a female staff member; someone who is very young with little
+    business experience might find it difficult to gain the respect and trust of a CEO of a large corporation.
+
+    Represent various voices
+    In qualitative research it usually necessary to interview a
+    variety of people within an organisation. Finding different subjects is called triangulation of subjects, 
+    where the idea is to try not to force one voice to emerge. Not all respondents are the same (e.g. some are guides, some are stars,
+    others are gatekeepers). In this vein it is important to try to avoid elite bias.
+
+    Everyone is an interpreter
+    This guideline recognises that subjects are creative interpreters 
+    of their worlds as we are of theirs. Interviewing is usually an artificial/rare event for
+    most subjects. This means that the interview leads to creating and reading one or more
+    texts (the initial text being the transcript of the interview).
+
+    Use Mirroring in questions and answers
+    Mirroring is taking the words and phrases
+    the subjects use in constructing a subsequent question or comment: mirroring their
+    comments. This allows the researcher to focus on the subjectsf world and uses their
+    language rather than imposing yours. The idea is for the interviewee to describe and
+    explain their world in their own words. It is usually good practice to use open
+    rather than closed questions, and to focus on common, vividly-held events and
+    stories. It is also advisable to move from the general to the specific. The role of
+    the interviewer involves listening, prompting, encouraging, and directing the
+    conversation.
+
+    Flexibility
+    Semi-structured and unstructured interviewing uses an incomplete script
+    and so requires flexibility, improvisation, and openness. The interviewer should be pre-
+    pared to explore interesting lines of research, and look for surprises. As mentioned ear-
+    lier, the interviewer should take account of subjectsf differing attitudes (awed, bored,
+    deceiving, fatigued, show off, shy, confessing) and respond accordingly.
+
+    Confidentiality of disclosures
+    It is important for researchers to keep transcripts/records/
+    and the technology confidential and secure. It may be advisable sometimes to provide
+    early feedback to subjects and organisations and to check with them about factual mat-
+    ters if needed.

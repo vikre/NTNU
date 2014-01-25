@@ -1,6 +1,6 @@
-package com.example.helicopter;
+package com.example.pingpong;
 
-import sheep.game.*;
+import sheep.game.Game;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
@@ -10,9 +10,9 @@ public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Game g = new Game(this, null);
-        g.pushState(new States(g.getResources()));
-        setContentView(g);
+        Game game = new Game(this, null);
+        game.pushState(new PingPong());
+        setContentView(game);
     }
 
 

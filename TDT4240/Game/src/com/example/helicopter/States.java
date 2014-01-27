@@ -49,41 +49,27 @@ public class States extends State implements TouchListener {
 	@Override
 	public void update(float t){
 		//updates the helicopters
-		main.update(System.currentTimeMillis());
-		hc1.update(System.currentTimeMillis());
-		hc2.update(System.currentTimeMillis());
+		long now = System.currentTimeMillis();
+		main.update(now);
+		hc1.update(now);
+		hc2.update(now);
 		
-		//collision detection left right
-		if(main.getX() > (width-main.getWidth())|| main.getX()<0){
-			main.setSpeed(-main.getSpeed().getX(), main.getSpeed().getX());
-			main.turnHelicopter();
-		}
-		//collision detection up down
-		if(main.getY() > (height-main.getHeight())|| main.getY()<0){
-			main.setSpeed(main.getSpeed().getX(),-main.getSpeed().getY());
-		}
+		collisionLeftWall(main);
+		collisionRightWall(main);
+		collisionUpperWall(main);
+		collisionLowerWall(main);
 		
-		//hc1
-		//collision detection left right
-		if(hc1.getX() > (width-hc1.getWidth())|| hc1.getX()<0){
-			hc1.setSpeed(-hc1.getSpeed().getX(), hc1.getSpeed().getX());
-			hc1.turnHelicopter();
-		}
-		//collision detection up down
-		if(hc1.getY() > (height-hc1.getHeight())|| hc1.getY()<0){
-			hc1.setSpeed(hc1.getSpeed().getX(),-hc1.getSpeed().getY());
-		}
+		collisionLeftWall(hc1);
+		collisionRightWall(hc1);
+		collisionUpperWall(hc1);
+		collisionLowerWall(hc1);
 		
-		//hc2
-		//collision detection left right
-		if(hc2.getX() > (width-hc2.getWidth())|| hc2.getX()<0){
-			hc2.setSpeed(-hc2.getSpeed().getX(), hc2.getSpeed().getX());
-			hc2.turnHelicopter();
-		}
-		//collision detection up down
-		if(hc2.getY() > (height-hc2.getHeight())|| hc2.getY()<0){
-			hc2.setSpeed(hc2.getSpeed().getX(),-hc2.getSpeed().getY());
-		}
+		collisionLeftWall(hc2);
+		collisionRightWall(hc2);
+		collisionUpperWall(hc2);
+		collisionLowerWall(hc2);
+		
+		
 		
 		//collision detection between helicopters
 		if(main.getHelicopterRect().intersect(hc1.getHelicopterRect())|| 
@@ -109,11 +95,40 @@ public class States extends State implements TouchListener {
 			hc1.setSpeed(-hc1.getSpeed().getX(),-hc1.getSpeed().getY());
 			hc1.turnHelicopter();
 		}
-				
-				
-		
 	}
 	
+	private void collisionLeftWall(Helicopter heli) {
+		//collision detection left right
+		if(heli.getX()<0){
+			heli.setX(1);
+			heli.setSpeed(-heli.getSpeed().getX(), heli.getSpeed().getY());
+			heli.turnHelicopter();
+		}
+	}
+	
+	private void collisionRightWall(Helicopter heli) {
+		//collision detection left right
+		if(heli.getX() > (width-heli.getWidth())){
+			heli.setX(width-heli.getWidth());
+			heli.setSpeed(-heli.getSpeed().getX(), heli.getSpeed().getY());
+			heli.turnHelicopter();
+		}
+	}
+	
+	private void collisionUpperWall(Helicopter heli) {
+		if(heli.getY()<0){
+			heli.setY(1);
+			heli.setSpeed(heli.getSpeed().getX(),-heli.getSpeed().getY());
+		}
+	}
+	
+	private void collisionLowerWall(Helicopter heli) {
+		if(heli.getY() > (height-heli.getHeight())){
+			heli.setY(height-heli.getHeight()-1);
+			heli.setSpeed(heli.getSpeed().getX(),-heli.getSpeed().getY());
+		}
+	}
+
 	@Override
 	public void draw(Canvas canvas){
 		height = canvas.getHeight();

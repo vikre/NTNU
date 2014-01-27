@@ -87,6 +87,7 @@ public class Helicopter extends Sprite{
 	public float getHeight(){return height;}
 	
 	public Rect getHelicopterRect(){
-		return new Rect((int)x,(int)y, (int)x+width, (int)y+height);
+		// Rect(int left, int top, int right, int bottom);
+		return new Rect((int)x, (int)y, (int)x+width, (int)y+height);
 	}
 }

@@ -69,34 +69,46 @@ public class States extends State implements TouchListener {
 		collisionUpperWall(hc2);
 		collisionLowerWall(hc2);
 		
+		collectionBetweenHelicopters(main, hc1);
+		collectionBetweenHelicopters(main, hc2);
+		collectionBetweenHelicopters(hc1, hc2);
 		
-		
-		//collision detection between helicopters
-		if(main.getHelicopterRect().intersect(hc1.getHelicopterRect())|| 
-				hc1.getHelicopterRect().intersect(main.getHelicopterRect())){
-			main.setSpeed(-main.getSpeed().getX(), main.getSpeed().getY());
-			main.turnHelicopter();
-			hc1.setSpeed(-hc1.getSpeed().getX(),-hc1.getSpeed().getY());
-			hc1.turnHelicopter();
-		}
-		//collision detection between helicopters
-		if(main.getHelicopterRect().intersect(hc2.getHelicopterRect())|| 
-				hc2.getHelicopterRect().intersect(main.getHelicopterRect())){
-			main.setSpeed(-main.getSpeed().getX(), main.getSpeed().getY());
-			main.turnHelicopter();
-			hc2.setSpeed(-hc2.getSpeed().getX(),-hc2.getSpeed().getY());
-			hc2.turnHelicopter();
-		}
-		//collision detection between helicopters
-		if(hc2.getHelicopterRect().intersect(hc1.getHelicopterRect())|| 
-				hc1.getHelicopterRect().intersect(hc2.getHelicopterRect())){
-			hc2.setSpeed(-hc2.getSpeed().getX(), hc2.getSpeed().getY());
-			hc2.turnHelicopter();
-			hc1.setSpeed(-hc1.getSpeed().getX(),-hc1.getSpeed().getY());
-			hc1.turnHelicopter();
-		}
+//		//collision detection between helicopters
+//		if(main.getHelicopterRect().intersect(hc1.getHelicopterRect())|| 
+//				hc1.getHelicopterRect().intersect(main.getHelicopterRect())){
+//			main.setSpeed(-main.getSpeed().getX(), main.getSpeed().getY());
+//			main.turnHelicopter();
+//			hc1.setSpeed(-hc1.getSpeed().getX(),-hc1.getSpeed().getY());
+//			hc1.turnHelicopter();
+//		}
+//		//collision detection between helicopters
+//		if(main.getHelicopterRect().intersect(hc2.getHelicopterRect())|| 
+//				hc2.getHelicopterRect().intersect(main.getHelicopterRect())){
+//			main.setSpeed(-main.getSpeed().getX(), main.getSpeed().getY());
+//			main.turnHelicopter();
+//			hc2.setSpeed(-hc2.getSpeed().getX(),-hc2.getSpeed().getY());
+//			hc2.turnHelicopter();
+//		}
+//		//collision detection between helicopters
+//		if(hc2.getHelicopterRect().intersect(hc1.getHelicopterRect())|| 
+//				hc1.getHelicopterRect().intersect(hc2.getHelicopterRect())){
+//			hc2.setSpeed(-hc2.getSpeed().getX(), hc2.getSpeed().getY());
+//			hc2.turnHelicopter();
+//			hc1.setSpeed(-hc1.getSpeed().getX(),-hc1.getSpeed().getY());
+//			hc1.turnHelicopter();
+//		}
 	}
 	
+	private void collectionBetweenHelicopters(Helicopter heliA, Helicopter heliB) {
+		if(heliA.getHelicopterRect().intersect(heliB.getHelicopterRect()) || 
+				heliB.getHelicopterRect().intersect(heliA.getHelicopterRect())){
+			heliA.setSpeed(-heliA.getSpeed().getX(), heliA.getSpeed().getY());
+			heliA.turnHelicopter();
+			heliB.setSpeed(-heliB.getSpeed().getX(),-heliB.getSpeed().getY());
+			heliB.turnHelicopter();
+		}
+	}
+
 	private void collisionLeftWall(Helicopter heli) {
 		//collision detection left right
 		if(heli.getX()<0){

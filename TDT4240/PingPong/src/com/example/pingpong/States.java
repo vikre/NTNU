@@ -38,7 +38,7 @@ public class States extends State implements TouchListener{
 		
 		//placing the paddles and ball and set the ball speed
 		paddle.setPosition(200, 80);
-		paddle2.setPosition(200, 605);
+		paddle2.setPosition(200, 610);
 		ball.setPosition(250, 200);
 		ball.setSpeed(250, 170);
 	}
@@ -100,7 +100,7 @@ public class States extends State implements TouchListener{
 			ball.setSpeed(ball.getSpeed().getX(),-ball.getSpeed().getY());
 		}
 		if(ball.getX()> (width-ball_img.getWidth())|| ball.getX()<0){
-			ball.setSpeed(ball.getSpeed().getX(), -ball.getSpeed().getY());
+			ball.setSpeed(-ball.getSpeed().getX(), ball.getSpeed().getY());
 		}
 		
 		//check if point should be given
@@ -109,7 +109,7 @@ public class States extends State implements TouchListener{
 			points++;
 			Log.w("States", "One point for player 2: "+points2);
 		}
-		if(ball.getY() < paddle2.getY()){
+		if(ball.getY() > paddle2.getY()){
 			ball.setPosition(height/2, width/2);
 			points2++;
 			Log.w("States","One point for player 1: "+points);

@@ -32,7 +32,7 @@ public class States extends State implements TouchListener{
 		ball = new Sprite(ball_img);
 		
 		//font and counters
-		font = new Font(0, 55, 20, 50, Typeface.SERIF, Typeface.NORMAL);
+		font = new Font(0, 55, 20, 20, Typeface.SERIF, Typeface.NORMAL);
 		points = 0;
 		points2 = 0;
 		

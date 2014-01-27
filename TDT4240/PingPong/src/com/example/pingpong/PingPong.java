@@ -13,13 +13,13 @@ public class PingPong extends State implements TouchListener{
 	private Font font;
 	
 	public PingPong(){
-		font = new Font(100, 100, 100, 60, Typeface.SANS_SERIF, Typeface.BOLD);
+		font = new Font(100, 100, 100, 30, Typeface.SANS_SERIF, Typeface.BOLD);
 		font.setTextAlign(Align.CENTER);
 	}
 	//draw the text on the screen
 	public void draw(Canvas c){
 		c.drawColor(Color.BLACK);
-		c.drawText("Tap the screen to start", c.getWidth()/2, 200, font);
+		c.drawText("Tap the screen to start", c.getWidth()/2, 300, font);
 	}
 	
 	//begin a new game

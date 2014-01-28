@@ -21,17 +21,17 @@ public class States extends State implements TouchListener {
 	public States(Resources res){
 		main = new Helicopter(BitmapFactory.decodeResource(res, R.drawable.mange_helikoptre),
 				0, 0, 100, 4);
-		main.setSpeed(900,900 );//set a start speed
+		main.setSpeed(600,600 );//set a start speed
 		main.update(System.currentTimeMillis());//update every millisec
 		
 		hc1 = new Helicopter(BitmapFactory.decodeResource(res, R.drawable.mange_helikoptre),
 			300, 100, 100, 4);
-		hc1.setSpeed(900,-900 );//set a start speed
+		hc1.setSpeed(600,-600 );//set a start speed
 		hc1.update(System.currentTimeMillis());//update every millisec
 		
 		hc2 = new Helicopter(BitmapFactory.decodeResource(res, R.drawable.mange_helikoptre),
 				100, 400, 100, 4);
-		hc2.setSpeed(900,900);//set a start speed
+		hc2.setSpeed(600,600);//set a start speed
 		hc2.update(System.currentTimeMillis());//update every millisec
 	}
 	
@@ -72,40 +72,23 @@ public class States extends State implements TouchListener {
 		collectionBetweenHelicopters(main, hc1);
 		collectionBetweenHelicopters(main, hc2);
 		collectionBetweenHelicopters(hc1, hc2);
-		
-//		//collision detection between helicopters
-//		if(main.getHelicopterRect().intersect(hc1.getHelicopterRect())|| 
-//				hc1.getHelicopterRect().intersect(main.getHelicopterRect())){
-//			main.setSpeed(-main.getSpeed().getX(), main.getSpeed().getY());
-//			main.turnHelicopter();
-//			hc1.setSpeed(-hc1.getSpeed().getX(),-hc1.getSpeed().getY());
-//			hc1.turnHelicopter();
-//		}
-//		//collision detection between helicopters
-//		if(main.getHelicopterRect().intersect(hc2.getHelicopterRect())|| 
-//				hc2.getHelicopterRect().intersect(main.getHelicopterRect())){
-//			main.setSpeed(-main.getSpeed().getX(), main.getSpeed().getY());
-//			main.turnHelicopter();
-//			hc2.setSpeed(-hc2.getSpeed().getX(),-hc2.getSpeed().getY());
-//			hc2.turnHelicopter();
-//		}
-//		//collision detection between helicopters
-//		if(hc2.getHelicopterRect().intersect(hc1.getHelicopterRect())|| 
-//				hc1.getHelicopterRect().intersect(hc2.getHelicopterRect())){
-//			hc2.setSpeed(-hc2.getSpeed().getX(), hc2.getSpeed().getY());
-//			hc2.turnHelicopter();
-//			hc1.setSpeed(-hc1.getSpeed().getX(),-hc1.getSpeed().getY());
-//			hc1.turnHelicopter();
-//		}
+
 	}
 	
 	private void collectionBetweenHelicopters(Helicopter heliA, Helicopter heliB) {
 		if(heliA.getHelicopterRect().intersect(heliB.getHelicopterRect()) || 
 				heliB.getHelicopterRect().intersect(heliA.getHelicopterRect())){
+			
+			
 			heliA.setSpeed(-heliA.getSpeed().getX(), heliA.getSpeed().getY());
 			heliA.turnHelicopter();
+			heliA.setX(heliA.getX() + heliA.getSpeed().getX());
+			heliA.setY(heliA.getY() + heliA.getSpeed().getY());
+			
 			heliB.setSpeed(-heliB.getSpeed().getX(),-heliB.getSpeed().getY());
 			heliB.turnHelicopter();
+			heliB.setX(heliB.getX() + heliB.getSpeed().getX());
+			heliB.setY(heliB.getY() + heliB.getSpeed().getY());
 		}
 	}
 

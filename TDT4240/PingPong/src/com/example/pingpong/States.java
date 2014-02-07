@@ -15,8 +15,9 @@ public class States extends State implements TouchListener{
 
 	private int width;
 	private int height;
-	private Sprite paddle, paddle2, ball;
-	private Image img,img2,ball_img;
+	private Sprite paddle, paddle2;
+	private Image img,img2;
+    private Ball ball;
 	private int points, points2;
 	private Font font;
 	
@@ -24,12 +25,11 @@ public class States extends State implements TouchListener{
 		//loading img
 		img = new Image(R.drawable.pongpaddle);
 		img2 = new Image(R.drawable.pongpaddle);
-		ball_img = new Image(R.drawable.ball);
 		
 		//creating sprites
 		paddle = new Sprite(img);
 		paddle2 = new Sprite(img2);
-		ball = new Sprite(ball_img);
+		ball = Ball.getInstance();
 		
 		//font and counters
 		font = new Font(0, 55, 20, 20, Typeface.SERIF, Typeface.NORMAL);
@@ -96,10 +96,10 @@ public class States extends State implements TouchListener{
 		}
 		
 		//collision with wall
-		if(ball.getY() > (height-ball_img.getHeight())|| ball.getY()< 0){
+		if(ball.getY() > (height-ball.getBall_img().getHeight())|| ball.getY()< 0){
 			ball.setSpeed(ball.getSpeed().getX(),-ball.getSpeed().getY());
 		}
-		if(ball.getX()> (width-ball_img.getWidth())|| ball.getX()<0){
+		if(ball.getX()> (width-ball.getBall_img().getWidth())|| ball.getX()<0){
 			ball.setSpeed(-ball.getSpeed().getX(), ball.getSpeed().getY());
 		}
 		

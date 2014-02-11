@@ -85,13 +85,9 @@ architectural patterns and design patterns?}
  works as the pattern you chose?)}
 \\
 We chose to implement the MVC-pattern in our assignment. In our implementation, 
-the <VÅR KLASSE!>AnimateSprite-class works as the model, and the <VÅR KLASSE>GameScreen 
-works as the View- Controller. Whenever the controller (the <VÅR KLASSE>TouchListener) 
-recieves a <VÅR EVENT>TouchEvent and needs to move the sprite, it’s call the 
-setPosition-method of the <VÅR SPRITE>AnimatedSprite. The <VÅR SPRITE>AnimatedSprite 
-class then sends a <VÅR SPRITE>ChangeEvent to notify any classes listening to the model. 
-This event is recieved in the <VÅR SPRITE>GameScreen class, which then updates the 
-textbox showing the position of the helicopter.\\
+the Ball and Paddle-class works as the model, and the State works as the View- Controller. 
+Whenever the controllers TouchListener recieves a TouchEvent and needs to move the sprite, it’s call the 
+setPosition-method of the appropriate Paddle-instance. To showcase a seperate View without controller attributes, we made a GameOverView for when the game is over.\\
 
 \emph{3.c) Is there any advantages in using this pattern in this program? (What are the advan- tages/disadvantages?)}\\
 An advantage of using the MVC-pattern is that the setLabel-method is only run at changes in the X- and Y-coordinates.

@@ -1,4 +1,7 @@
-package com.example.pingpong;
+package com.example.pingpong.models;
+
+import com.example.pingpong.R;
+import com.example.pingpong.R.drawable;
 
 import android.graphics.Canvas;
 import sheep.graphics.Image;

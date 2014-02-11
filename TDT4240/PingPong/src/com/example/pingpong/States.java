@@ -1,5 +1,8 @@
 package com.example.pingpong;
 
+import com.example.pingpong.models.Ball;
+import com.example.pingpong.models.Paddle;
+
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Typeface;
@@ -15,7 +18,10 @@ public class States extends State implements TouchListener{
 
 	private int width;
 	private int height;
-	private Sprite paddle, paddle2;
+	
+//	private Sprite paddle, paddle2;
+	private Paddle paddle, paddle2;
+	
 	private Image img,img2;
     private Ball ball;
 	private int points, points2;
@@ -27,8 +33,8 @@ public class States extends State implements TouchListener{
 		img2 = new Image(R.drawable.pongpaddle);
 		
 		//creating sprites
-		paddle = new Sprite(img);
-		paddle2 = new Sprite(img2);
+		paddle = new Paddle(img);
+		paddle2 = new Paddle(img2);
 		ball = Ball.getInstance();
 		
 		//font and counters
@@ -80,11 +86,11 @@ public class States extends State implements TouchListener{
 		//check if there is a winner
 		if(points == 2){
 			getGame().popState();
-			getGame().pushState(new GameOver(1));
+			getGame().pushState(new GameOverView(1));
 		}
 		if(points2 == 2){
 			getGame().popState();
-			getGame().pushState(new GameOver(2));
+			getGame().pushState(new GameOverView(2));
 		}
 		
 		//collision with paddle

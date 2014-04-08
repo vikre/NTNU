@@ -10,12 +10,12 @@ import sheep.game.State;
 import sheep.graphics.Font;
 import sheep.input.TouchListener;
 
-public class GameOver extends State implements TouchListener {
+public class GameOverView extends State implements TouchListener {
 	
 	private int winner;
 	private Font font, font2;
 	
-	public GameOver(int player){
+	public GameOverView(int player){
 		this.winner = player;
 		font = new Font(88,88,88,50,Typeface.SERIF,Typeface.BOLD);
 		font2 = new Font(100,100,100,20, Typeface.SERIF,Typeface.NORMAL);

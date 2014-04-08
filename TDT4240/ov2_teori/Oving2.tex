@@ -1,0 +1,100 @@
+%
+%  untitled
+%
+%  Created by Jim Frode Hoff on 2014-02-07.
+%  Copyright (c) 2014 . All rights reserved.
+%
+\documentclass[]{article}
+
+% Use utf-8 encoding for foreign characters
+\usepackage[utf8]{inputenc}
+
+% Setup for fullpage use
+\usepackage{fullpage}
+
+% Uncomment some of the following if you use the features
+%
+% Running Headers and footers
+%\usepackage{fancyhdr}
+
+% Multipart figures
+%\usepackage{subfigure}
+
+% More symbols
+%\usepackage{amsmath}
+%\usepackage{amssymb}
+%\usepackage{latexsym}
+
+% Surround parts of graphics with box
+\usepackage{boxedminipage}
+
+% Package for including code in the document
+\usepackage{listings}
+
+% If you want to generate a toc for each chapter (use with book)
+\usepackage{minitoc}
+
+% This is now the recommended way for checking for PDFLaTeX:
+\usepackage{ifpdf}
+
+%\newif\ifpdf
+%\ifx\pdfoutput\undefined
+%\pdffalse % we are not running PDFLaTeX
+%\else
+%\pdfoutput=1 % we are running PDFLaTeX
+%\pdftrue
+%\fi
+
+\ifpdf
+\usepackage[pdftex]{graphicx}
+\else
+\usepackage{graphicx}
+\fi
+\title{TDT4240 - Excerise 2}
+\author{Linn Vikre\\ Jim Frode Hoff}
+
+\date{2014-02-07}
+
+\begin{document}
+
+\ifpdf
+\DeclareGraphicsExtensions{.pdf, .jpg, .tif}
+\else
+\DeclareGraphicsExtensions{.eps, .jpg}
+\fi
+
+\maketitle
+
+\section{Introduction}
+\emph{3.a) For the patterns listing in Step3, which are architectural patterns 
+and which are design patterns? What are the relationships and differences of 
+architectural patterns and design patterns?}
+\\
+
+\begin{tabular}{ | l | l | } \hline
+  Observer & 2 Design Pattern \\ \hline
+  State & Design Pattern \\ \hline
+  Template Method & Design Pattern \\ \hline
+  MVC & Architectural pattern \\ \hline
+  Abstract Factory & Design Pattern \\ \hline
+  Pipe and Filter & Deisgn Pattern \\ \hline
+\end{tabular}
+\\
+
+\emph{3.b) How is the pattern you chose realized in your code? (Which class(es)
+ works as the pattern you chose?)}
+\\
+We chose to implement the MVC-pattern in our assignment. In our implementation, 
+the Ball and Paddle-class works as the model, and the State works as the View- Controller. 
+Whenever the controllers TouchListener recieves a TouchEvent and needs to move the sprite, it’s call the 
+setPosition-method of the appropriate Paddle-instance. To showcase a seperate View without controller attributes, we made a GameOverView for when the game is over.\\
+
+\emph{3.c) Is there any advantages in using this pattern in this program? (What are the advan- tages/disadvantages?)}\\
+An advantage of using the MVC-pattern is that the setLabel-method is only run at changes in the X- and Y-coordinates.
+
+
+
+
+\bibliographystyle{plain}
+\bibliography{}
+\end{document}
